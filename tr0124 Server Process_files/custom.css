@@ -1,0 +1,705 @@
+
+/* Custom styles for Confluence (included for all themes by default) */
+
+/* Refer to Look and Feel > Custom HTML for additional print stylesheet */  
+  
+/* 
+    This stylesheet defines styles that only apply to the Default theme. Styles common to all themes should go in 
+    master.css 
+*/  
+  
+body {  
+    /* Page-level left and right padding. Internal content that needs to be full-width should use 'margin: 0 -10px'. */  
+    margin: 0;  
+    border-left: solid #fff 30px;  
+    border-right: solid #fff 30px;  
+    font-family: Arial, Helvetica, sans-serif;  
+    min-width:890px;  
+    background-color:#fff;  
+}  
+  
+/*-------------------------------------------------------------- 
+Block level elements 
+--------------------------------------------------------------*/  
+A,  
+A:link,  
+A:visited  
+{  
+    text-decoration:none !important;  
+}  
+  
+A:visited  
+{  
+    color:#004a9b;  
+}  
+  
+A:hover  
+{  
+    text-decoration:underline !important;  
+}  
+  
+HR  
+{  
+    margin-top:1em;  
+    padding-top:1em;  
+    border:none;  
+    background-color:#fff;  
+    border-top: 1px dotted #d2d2d2;  
+}  
+
+#full-height-container
+{
+	background:#f7f7f7;
+}
+
+#header-precursor
+{
+	background:#fff;
+}
+  
+/*-------------------------------------------------------------- 
+Altium logo 
+--------------------------------------------------------------*/  
+body  
+{  
+    /*padding-top:60px;  
+    background:#fff url(/download/attachments/15532073/logo_altium.gif) no-repeat 30px 18px;  */
+}  
+  
+/* Hide logo in editing mode */  
+/*
+body.content-preview,  
+body.mceContentBody  
+{  
+    padding-top:1em;  
+    background:none;  
+} 
+*/ 
+  
+  
+/*-------------------------------------------------------------- 
+Header elements 
+--------------------------------------------------------------*/  
+  
+#header  
+{  
+    margin: 0;  
+    padding:0 0 0 0 !important;  
+    background: #040404 url(/download/attachments/15532073/header_bg_l.png) repeat-x top left;  
+}  
+  
+#headerContents  
+{  
+    background: url(/download/attachments/15532073/header_bg_b.png) repeat-x bottom left;  
+    min-height:40px;  
+      
+}  
+  
+#header-menu-bar  
+{  
+    background:url(/download/attachments/15532073/header_bg_r.png) repeat-x top right;  
+    margin-right:0;  
+    padding-bottom:14px;  
+    padding-top:2px;  
+    padding-right:15px;  
+}  
+  
+#wikiTitle
+{
+	padding:0;
+	margin:0;
+}
+
+#wikiTitle A
+{
+	background:#fff url(/download/attachments/15532073/logo_altium.gif) no-repeat center left; 
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+	width: 112px;
+	height:45px;
+}
+
+#wikiDescription  
+{  
+    display:none;
+}  
+  
+/*-------------------------------------------------------------- 
+Breadcrumb nav 
+--------------------------------------------------------------*/  
+  
+#breadcrumbs  
+{  
+    background:url(/download/attachments/15532073/header_bg_l.png) repeat-x top left;  
+    padding-left:15px;  
+    padding-top:3px;  
+    padding-bottom:14px;  
+      
+}  
+  
+#breadcrumbs LI{  
+    /*color:#cc9a34;*/  
+}  
+  
+#breadcrumbs LI A{  
+    color:#fff;  
+    padding-right:8px;  
+    background:url(/download/attachments/15532073/breadcrumb_sep.gif) no-repeat center right;  
+}  
+
+/*-------------------------------------------------------------- 
+SideBar
+--------------------------------------------------------------*/  
+#splitter-sidebar > H4
+{
+	margin-left:10px;
+}
+  
+/*-------------------------------------------------------------- 
+Searchbox 
+--------------------------------------------------------------*/  
+  
+#quick-search  
+{  
+    position:fixed;  
+    top:10px;  
+    right:30px;  
+    z-index:100;  
+}  
+  
+#quick-search fieldset {  
+    float: none;  
+    display:inline;  
+}  
+  
+#navigation  
+{  
+    /*position:absolute;*/  
+    /*top:5px;*/  
+    /*right:215px;*/  
+}  
+  
+#user-control-panel, #page-view-panel {  
+    float: right;  
+}  
+  
+  
+/*-------------------------------------------------------------- 
+Browse menu 
+--------------------------------------------------------------*/  
+#browse-menu-link,  
+#login-link,  
+#signup-link  
+{  
+    color:white !important;  
+}  
+  
+a#login-link,  
+a#login-link,  
+a#signup-link  
+{  
+    text-decoration:none !important;  
+}  
+  
+a#login-link:hover,  
+a#login-link:hover,  
+a#signup-link:hover  
+{  
+    text-decoration:underline !important;  
+}  
+  
+/*-------------------------------------------------------------- 
+Custom logo 
+--------------------------------------------------------------*/  
+  
+#com-atlassian-confluence h1 img {  
+    /*max-height: 2.5em;*/ /* scale logo image with font size */  
+}  
+#com-atlassian-confluence h1 img.custom {  
+    /*height: auto;*/  
+}  
+  
+/*-------------------------------------------------------------- 
+Page title 
+--------------------------------------------------------------*/  
+  
+h1 span.title-text {  
+    display: table; /* page title wrapping drops straight down */  
+}  
+h1 a:hover {  
+   text-decoration:underline;  
+}  
+h1 a {  
+    color:#000 !important;  
+}  
+  
+.editable-title {  
+    margin: 0 10px 0 58px;  
+}  
+  
+#main {  
+    /*padding: 0 15px 0 15px ;*/  
+    border-top: solid #fff 10px;  
+    border-bottom: solid #fff 10px;  
+}  
+  
+/*-------------------------------------------------------------- 
+Various container layout 
+--------------------------------------------------------------*/  
+  
+#content {  
+    clear: left;  
+}  
+#content.space {  
+    margin-top: 10px;  
+}  
+  
+#quick-search-submit {  
+    display: none;  
+}  
+  
+#user-control-panel {  
+    display: none;     
+}  
+  
+#user-control-panel li {  
+    border-left: solid 1px;  
+}  
+  
+#user-control-panel li.first {  
+    border: none;  
+}  
+  
+#user-control-panel li, #page-view-panel li, #page-prefs-list li {  
+    color: #666;  
+    float: left;  
+    font-size: .9em;  
+    margin: 0 0 0 .3em;  
+    padding: 0 0 0 .3em;  
+}  
+  
+#user-control-panel a {  
+    color: #666;  
+}  
+  
+#navigation {  
+    display: inline;  
+}  
+  
+.page-actions {  
+    float: right;  
+    border: solid 1px #ccc;  
+    padding: 5px;  
+    margin-left: 10px;  
+}  
+  
+.remove-control {  
+    display: none;  
+}  
+  
+/*-------------------------------------------------------------- 
+Page metadata 
+--------------------------------------------------------------*/  
+  
+.page-metadata {  
+    color: #666;  
+    font-size: 0.9em;  
+    margin: 10px 0;  
+}  
+  
+.page-metadata a:link,  
+.page-metadata a:active,  
+.page-metadata a:hover,  
+.page-metadata a:visited {  
+    color: #666;  
+    font-style: normal;  
+}  
+  
+.page-metadata UL,  
+.page-metadata OL  
+{  
+    padding-left:0;  
+    margin-left:0;  
+    list-style:none;  
+}  
+  
+/* Kill the IE only paperclip icon */  
+.page-metadata ul a.action-view-attachments span.page-metadata-attachments-text {  
+    filter: expression("progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" +  
+    document.getElementById('confluence-context-path').content +  
+    "/images/icons/kill.png', sizingMethod='crop')");  
+}  
+  
+  
+  
+/*-------------------------------------------------------------- 
+Section headers 
+--------------------------------------------------------------*/  
+  
+.section-header {  
+    margin-bottom: 5px;  
+    padding: 2px 0;      
+}  
+  
+/* All links are set to action.linkColor but section header links are grey */  
+.section-header a:link,  
+.section-header a:active,  
+.section-header a:hover,  
+.section-header a:visited {  
+    color: #666;  
+}  
+  
+h2.section-title,  
+.pageSectionTitle {  
+    font-size: 12pt;  
+    font-weight: bold;  
+    color: black;  
+    margin-top: 20px;  
+    padding: 0;  
+    display: inline;  
+}  
+  
+/*-------------------------------------------------------------- 
+Wiki content headers 
+--------------------------------------------------------------*/  
+.wiki-content H2,  
+.wiki-content H3,  
+.wiki-content H4  
+{  
+    color:#555;  
+}  
+  
+.wiki-content h1  
+{  
+    font-size:22px;  
+}  
+  
+.wiki-content h2  
+{  
+    font-size:20px;  
+}  
+  
+.wiki-content h3  
+{  
+    font-size:18px;  
+}  
+  
+.wiki-content h4  
+{  
+    font-size:16px;  
+}  
+  
+.section-title a:link,  
+.section-title a:active,  
+.section-title a:hover,  
+.section-title a:visited,  
+a.pageSectionTitle:link,  
+a.pageSectionTitle:active,  
+a.pageSectionTitle:hover,  
+a.pageSectionTitle:visited {  
+    color: black;  
+}  
+  
+#sidebar {  
+    clear: right;  
+    float: right;  
+    width: 16em;  
+}  
+  
+#content.space,  
+#content.edit form.markup {  
+    margin-right: 16em;  
+}  
+.sidebar-content {  
+    margin: 10px 0 0 1em;  
+}  
+.blogcalendar {  
+    width: 15em;  
+}  
+.blogcalendar th a.calendarhead,  
+.blogcalendar th.calendarhead {  
+    font-size: 1em;  
+}  
+.blogcalendar td,  
+.blogcalendar th {  
+    font-size: .85em;  
+}  
+
+.wiki-content h1,
+.wiki-content h2,
+.wiki-content h3,
+.wiki-content h4
+{
+border:none;
+}
+  
+/*-------------------------------------------------------------- 
+Folder tab link styles 
+--------------------------------------------------------------*/  
+.tabnav .tabs a {  
+    padding: 5px 5px 4px;  
+    margin: 5px 3px 0 0;  
+    border-width: 1px;  
+    border-style: solid;  
+    border-bottom: none;  
+    text-decoration: none;  
+    display: block;  
+    float: left;  
+}  
+  
+.tabnav .tabs a.current {  
+    background: white;  
+    border-bottom: 1px solid white;  
+    color: black;  
+}  
+.tabnav .tabs a.current:link, .tabnav .tabs a.current:visited {  
+    color: black;  
+}  
+.tabnav .tabs a.current:hover {  
+    background: white;  
+    border-bottom: 1px solid white;  
+    color: black;  
+}  
+  
+/*-------------------------------------------------------------- 
+List page navigation tabs 
+--------------------------------------------------------------*/  
+.tabnav, .comment .tabnav {  
+    padding: 0;  
+    margin: 0;  
+    border-bottom-width: 1px;  
+    border-bottom-style: solid;  
+    float: left;  
+    display: inline;  
+    list-style-position: outside;  
+    width: 100%;  
+    font-weight: bold;  
+    font-size: 10pt;  
+}  
+  
+.after-tabnav {  
+    clear: both;  
+}  
+  
+.tabnav li.tabs {  
+    list-style: none;  
+    margin: 0 0 -1px 10px;  
+    float: left;  
+    display: block;  
+}  
+  
+  
+/*-------------------------------------------------------------- 
+Dashboard customization 
+--------------------------------------------------------------*/  
+#spacesLabel {  
+    padding: 4px 6px;  
+    float: left;  
+    margin-top: 5px;  
+}  
+  
+#footer  
+{  
+    border-top: 1px dotted #d2d2d2;  
+    margin-top: 1em;  
+    padding-top: 1em;  
+    background:#fff;  
+}  
+  
+#footer #poweredby {  
+    font-size: 0.9em;  
+    margin: 0 -10px;  
+    background:#fff;  
+}  
+  
+.license-eval  
+{  
+    display:none;  
+}  
+  
+/*-------------------------------------------------------------- 
+Various over-rides 
+--------------------------------------------------------------*/  
+table.confluenceTable th.confluenceTh, table.confluenceTable td.confluenceTd {  
+/*border:0 !important;*/  
+}  
+  
+  
+img.confluence-embedded-image{  
+vertical-align:middle;  
+}  
+  
+  
+#user-menu-link.ajs-menu-title  
+{  
+    color:#fff !important;  
+}  
+  
+.image-wrap  
+{  
+    display:inline-block;  
+    vertical-align:middle;  
+}  
+  
+/*-------------------------------------------------------------- 
+Big yellow section icons 
+--------------------------------------------------------------*/  
+.sectionIcon  
+{  
+    padding-right:10px;  
+}  
+  
+/*-------------------------------------------------------------- 
+Links with icons 
+--------------------------------------------------------------*/  
+.linkList.horizontal .iconLink{  
+display:inline;  
+padding-right:15px;  
+}  
+  
+  
+.iconLink{  
+    padding-left:20px !important;  
+    margin:5px 0 !important;  
+    background:url(/download/attachments/15532073/14_info.gif) no-repeat center left;  
+}  
+.iconLink.icnpdf    {background-image: url(/download/attachments/15532073/14_pdf.gif);}  
+.iconLink.icnemail {background-image: url(/download/attachments/15532073/14_email.gif);}  
+.iconLink.icnimage {background-image: url(/download/attachments/15532073/14_image.gif);}  
+.iconLink.icnvideo {background-image: url(/download/attachments/15532073/14_video.gif);}  
+.iconLink.icninfo  {background-image: url(/download/attachments/15532073/14_info.gif);}  
+  
+/* Table padding */  
+.sectionMacro TD{  
+    padding-right:1em !important;  
+}  
+  
+/*-------------------------------------------------------------- 
+Table of contents 
+--------------------------------------------------------------*/  
+.toc UL  
+{  
+    list-style:none;  
+    list-style-position:outside;  
+    padding-left:0;  
+    margin:0;  
+}  
+  
+.toc UL UL  
+{  
+    margin-left:20px;  
+    padding-left:0;  
+}  
+  
+.toc LI  
+{  
+    margin-left:0;  
+    padding-left:0;  
+}  
+  
+.toc LI A  
+{  
+    display:block;  
+    padding-left:20px;  
+    background:url(/download/attachments/15532073/14_info.gif) no-repeat top left;  
+}  
+  
+  
+  
+/*-------------------------------------------------------------- 
+Generic panels 
+--------------------------------------------------------------*/  
+.panel  
+{  
+    margin-left:0;  
+    margin-right:0;  
+    border-color:#d2d2d2 !important;  
+    background:#f4f4f4 !important;  
+}  
+  
+.panelHeader  
+{  
+    background:#f4f4f4 !important;  
+}  
+  
+.helpheading, .panelHeader, .menuheading, #helpheading, .pageheader, .sectionbottom  
+{  
+    border-bottom-color: #d2d2d2;  
+}  
+  
+.panelContent  
+{  
+    background:#f4f4f4 !important;  
+}  
+  
+.panel h2,  
+.panel h3,  
+.panel h4,  
+.panel h5  
+{  
+    font-size:13px;  
+    margin-top:0.5em;  
+}  
+  
+.panel .nobr  
+{  
+    white-space:normal;  
+}  
+  
+/*-------------------------------------------------------------- 
+Side panel 
+--------------------------------------------------------------*/  
+.sidepanel  
+{  
+    padding:5px 10px;  
+    margin:0 20px 1em 1em;  
+    float:right;  
+    width:25%;  
+    clear:both;  
+}  
+  
+/*-------------------------------------------------------------- 
+Language box 
+--------------------------------------------------------------*/  
+.langbox .iconLink  
+{  
+    float:left;  
+    margin-right:10px !important;  
+    padding:0 !important;  
+    background:none;  
+    overflow:hidden;  
+}  
+  
+.langbox BR  
+{  
+    display:none; /* Hide extra BR due to buggy Confluence v3 */  
+}  
+  
+.langbox .iconLink A  
+{  
+    display:block;  
+    text-indent:1000px;  
+}  
+  
+.langbox .iconLink.icnen A{background:url(/download/attachments/15532073/lang_en.gif) no-repeat;}  
+.langbox .iconLink.icnfr A{background:url(/download/attachments/15532073/lang_fr.gif) no-repeat;}  
+.langbox .iconLink.icnde A{background:url(/download/attachments/15532073/lang_de.gif) no-repeat;}  
+.langbox .iconLink.icncn A{background:url(/download/attachments/15532073/lang_cn.gif) no-repeat;}  
+.langbox .iconLink.icnkr A{background:url(/download/attachments/15532073/lang_kr.gif) no-repeat;}  
+.langbox .iconLink.icnjp A{background:url(/download/attachments/15532073/lang_jp.gif) no-repeat;}  
+.langbox .iconLink.icnru A{background:url(/download/attachments/15532073/lang_ru.gif) no-repeat;}  
+.langbox .iconLink.icnpl A{background:url(/download/attachments/15532073/lang_pl.gif) no-repeat;}  
+  
+.langbox .iconLink.icnen{width:62px;height:16px}  
+.langbox .iconLink.icnfr{width:68px;height:16px}  
+.langbox .iconLink.icnde{width:66px;height:16px}  
+.langbox .iconLink.icncn{width:68px;height:16px}  
+.langbox .iconLink.icnkr{width:54px;height:16px}  
+.langbox .iconLink.icnjp{width:56px;height:16px}  
+.langbox .iconLink.icnru{width:65px;height:16px}  
+.langbox .iconLink.icnpl{width:62px;height:16px}  
+
+/* End custom styles for Confluence */
+
+
